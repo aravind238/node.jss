@@ -36,5 +36,5 @@ jobs:
         username: ${{ secrets.SSH_USERNAME }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         script: |
-          cd /root/my-node-api
-          sudo docker compose restart
+          cd /home/ubuntu/my-node-api
+          docker compose restart
