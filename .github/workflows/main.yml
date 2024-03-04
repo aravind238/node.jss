@@ -37,4 +37,10 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         script: |
           cd /home/ubuntu/my-node-api
-          sudo docker compose restart
+          sudo docker-compose down
+          docker-compose up -d --scale app=3
+      env:
+          DOCKER_HOST: ${{ secrets.DOCKER_HOST }}
+          SSH_USERNAME: ${{ secrets.SSH_USERNAME }}
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+
