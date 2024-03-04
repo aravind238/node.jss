@@ -4,7 +4,7 @@ const port = 3000;
 
 app.get('/', (req, res) => {
   // Simulate fetching data (replace with your actual logic)
-  const data = { message: 'Hello from the API!' };
+  const data = { message: 'Hello from the datalabs!' };
 
   res.json(data); // Send structured JSON response
 });
