@@ -1,11 +1,11 @@
 const express = require('express');
 const app = express();
 const port = 3000;
+const logger = require('./logger');
 
 app.get('/', (req, res) => {
   // Simulate fetching data (replace with your actual logic)
   const data = { message: 'Hello from the API!' };
-
   res.json(data); // Send structured JSON response
 });
 
