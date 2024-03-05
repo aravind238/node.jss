@@ -5,7 +5,7 @@ const logger = require('./logger');
 
 app.get('/', (req, res) => {
   // Simulate fetching data (replace with your actual logic)
-  const data = { message: 'welcome welcome!' };
+  const data = { message: 'welcome welcome2!' };
   res.json(data); // Send structured JSON response
 });
 
